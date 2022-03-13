@@ -3,6 +3,8 @@ Crypt is a project for encrypting an decrypting data using a custom algorithm (d
 
 It takes two keys to encrypt: the complement which is a temporal key and the main key that is used to decrypt the text. The key is 208 characters long and the complement is 100 (the only characters you can use are ```ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz```).
 
+View the usage.cpp if you want documentation.
+
 ## How it works?
 
 ### Encrypt.h
