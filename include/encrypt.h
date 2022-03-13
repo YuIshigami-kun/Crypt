@@ -125,6 +125,8 @@ string Encrypt::encrypt(){
 
             if(f == -1){
                 end += slicedText[i][s] + std::to_string(s);
+            }else if(isInt(slicedText[i][s]) == true){
+                end += slicedText[i][s] + std::to_string(s);
             }else{
                 start.replace(f, 1, std::to_string(s));
             }

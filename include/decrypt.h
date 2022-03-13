@@ -9,29 +9,6 @@ using std::vector;
 using std::map;
 //using std::cout; using std::endl;
 
-//Extend the string to x chars
-void extendString(string &x, short length){
-    for(int i = 0; i < length; i++){
-        if(i >= x.length()){
-            x += ' ';
-        }
-    }
-}
-
-//Check if a char is int
-bool isInt(char a){
-    if(a >= '0' && a <= '9') return true;
-    else return false;
-}
-
-//Check if it's in the alphabet vector
-bool isSpecial(vector<char> alphabet, char b){
-    for(short i = 0; i < alphabet.size(); i++){
-        if(alphabet[i] == b) return false;
-    }
-
-    return true;
-}
 
 //Main class for decrypting
 class Decrypt{
@@ -122,7 +99,6 @@ string Decrypt::decrypt(){
                 if(s2 == 0){
                     y = dText[i];
                     s2++;
-
                 }else{
                     s2 = 0;
                     extendString(x, pos + 1);
